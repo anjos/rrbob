@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/anjos/rrpack.svg?branch=master
-    :target: https://travis-ci.org/anjos/rrpack
+.. image:: https://travis-ci.org/anjos/rrbob.svg?branch=master
+    :target: https://travis-ci.org/anjos/rrbob
 
 #################################################################
 Reproducible Logistic Regression on Fisher's Iris Flower Database
@@ -16,10 +16,26 @@ This bundle contains the code I used to generate the tables on the paper::
     url = {http://example.com/path/to/my/article.pdf},
   }
 
-
 We appreciate your citation in case you use results obtained directly or
 indirectly via this software package.
 
+Methods are implemented using Bob's Iris Flower database API and the Logistic
+Regression trainer and Linear Machines available on that framework. Authors of
+Bob as you cite this paper if you make use of their software::
+
+  @inproceedings{bob2012,
+    author = {A. Anjos AND L. El Shafey AND R. Wallace AND
+    M. G\"unther AND C. McCool AND S. Marcel},
+    title = {Bob: a free signal processing and machine learning
+    toolbox for researchers},
+    year = {2012},
+    month = oct,
+    booktitle = {20th ACM Conference on Multimedia Systems
+    (ACMMM), Nara, Japan},
+    publisher = {ACM Press},
+    url =
+    {http://publications.idiap.ch/downloads/papers/2012/Anjos_Bob_ACMMM12.pdf},
+  }
 
 Installation
 ------------
