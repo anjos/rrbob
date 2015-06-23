@@ -8,8 +8,8 @@ from setuptools import setup, find_packages
 setup(
 
    name="rrbob",
-   version="0.1",
-   description="Basic example of a Reproducible Research Project in Python",
+   version="1.0",
+   description="Basic example of a Reproducible Research Project in Python/Bob",
    url='http://github.com/anjos/rrbob',
    license="BSD",
    author='Andre Anjos',
