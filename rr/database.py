@@ -8,7 +8,7 @@ databases from Fisher's original work.'''
 
 
 import numpy
-import pkg_resources
+import bob.db.iris
 
 
 # A list of protocols we implement
@@ -31,27 +31,7 @@ CLASSES = [
         ]
 
 # The four values that were sampled
-VARIABLES = [
-        'sepal length',
-        'sepal width',
-        'petal length',
-        'petal width',
-        ]
-
-
-def load():
-  '''Loads the data from its CSV format into an easy to dictionary of arrays'''
-
-  import csv
-  data = dict([(k,[]) for k in CLASSES])
-  with open(pkg_resources.resource_filename(__name__, 'data.csv'), 'rb') as f:
-    reader = csv.reader(f)
-    for k, row in enumerate(reader):
-      if not k: continue
-      data[row[4]].append(numpy.array([float(z) for z in row[:4]]))
-  for k in CLASSES:
-    data[k] = numpy.vstack(data[k])
-  return data
+VARIABLES = bob.db.iris.names
 
 
 def split_data(data, subset, splits):
@@ -86,7 +66,7 @@ def get(protocol, subset, classes=CLASSES, variables=VARIABLES):
 
   '''
 
-  retval = split_data(load(), subset, PROTOCOLS[protocol])
+  retval = split_data(bob.db.iris.data(), subset, PROTOCOLS[protocol])
 
   # filter variables (features)
   varindex = [VARIABLES.index(k) for k in variables]

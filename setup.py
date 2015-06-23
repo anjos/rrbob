@@ -23,7 +23,8 @@ setup(
    install_requires=[
      'setuptools', #always required
      'numpy',
-     'scipy',
+     'bob.db.iris',
+     'bob.learn.linear',
      ],
 
    entry_points = {
