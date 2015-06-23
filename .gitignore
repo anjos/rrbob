@@ -7,3 +7,4 @@ parts/
 .installed.cfg
 *.egg-info/
 sphinx/
+dist/
