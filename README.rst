@@ -42,7 +42,7 @@ Installation
 
 Run::
 
-  $ python bootstrap_buildout.py
+  $ python bootstrap-buildout.py
   $ ./bin/buildout
 
 The tests on my paper were executed on a machine running Ubuntu 12.04, with
