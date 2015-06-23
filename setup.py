@@ -7,10 +7,10 @@ from setuptools import setup, find_packages
 
 setup(
 
-   name="rrpack",
+   name="rrbob",
    version="0.1",
    description="Basic example of a Reproducible Research Project in Python",
-   url='http://github.com/anjos/rr.packaged',
+   url='http://github.com/anjos/rrbob',
    license="BSD",
    author='Andre Anjos',
    author_email='andre.anjos@idiap.ch',
